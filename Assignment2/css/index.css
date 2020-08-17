@@ -1,0 +1,66 @@
+body{
+    font-family: 'Sriracha', cursive;
+}
+
+input{
+   width: 40%;
+   padding:5px 7px 5px;  
+}
+
+i {
+border: 1px solid black;
+border-radius: 0.2em;
+padding:4px 7px 6px;  
+}
+
+/************************************Classes*********************************/
+
+
+.main-tag{
+    text-align: center;
+}
+.category{
+    text-align: center;
+}
+
+.category a{
+    border:1px solid black;
+    border-radius: 0.5em;
+    margin:0 20px;
+    padding: 3px 10px;
+    color:black;
+}
+.searchbox{
+    text-align: center;
+}
+
+
+.img{
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 50%;
+    border-radius: 0.5em 0.5em 0 0;
+}
+.each-item{
+    display: inline-block;
+    width:25%;
+    margin:3.2%;
+}
+.items{
+        width:100%;
+        margin: 20px auto;
+}
+.img-content{
+    border: 1px solid gainsboro;
+    border-top: none;
+    border-radius: 0 0 0.5em 0.5em;
+    padding:4%;
+}
+.name{
+    display: inline-block;
+
+}
+.price{
+    display: inline-block;
+    float: right;
+}
