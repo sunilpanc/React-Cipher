@@ -25,11 +25,8 @@ class App extends React.Component {
      })
    }
    deleteHandler=(id)=>{
-    let courseDetails = [...this.state.courseDetails].forEach(element=>{
-      if(element.id!==id)
-      {
-        return element;
-      }
+    let courseDetails = this.state.courseDetails.filter(element=>{
+      return element.id!==id;
     });
     this.setState({
       courseDetails
@@ -40,7 +37,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar heading={this.state.heading}></Navbar>
-        <Display courseDetails={this.state.courseDetails} deleteHandler={this.state.deleteHandler}></Display>
+        <Display courseDetails={this.state.courseDetails} deleteHandler={this.deleteHandler}></Display>
         <AddCourse addCourse ={this.addCourse}></AddCourse>
       </div>
     );
