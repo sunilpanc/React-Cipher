@@ -3,7 +3,7 @@ import './App.css';
 import Add from './add';
 import Display from './Display'
 import 'materialize-css';
-
+import 'materialize-css/dist/css/materialize.min.css';
 class App extends Component {
     state={
       task:[ {id:1,work:"Some Work"}],
@@ -20,11 +20,17 @@ class App extends Component {
       this.setState({currentChange:'',task});
     }
  
+    deleteHandler=(index)=>{
+      let currentState = [...this.state.task].filter((element)=>{
+        return index !==element.id+1;
+      })
+      this.setState({task:currentState});
+    }
   render(){
     return (
-      <div className="App">
+      <div className="container app">
          <Add currentChange = {this.handleChange} currentUpdate ={this.handleUpdate} inputValue = {this.state.currentChange}/>
-         <Display allValues={this.state.task}/>
+         <Display allValues={this.state.task} deleteHandler={this.deleteHandler}/>
       </div>
     );
   }

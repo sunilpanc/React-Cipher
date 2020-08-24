@@ -3,8 +3,9 @@ import React from 'react';
 const add=(props)=>{
     return(
         <div>
-            <input type='text' onChange={props.currentChange} value={props.inputValue}/>
-            <button type='button' onClick={props.currentUpdate}>Add</button>
+            <label htmlFor='task'>Enter your task</label>
+            <input type='text' onChange={props.currentChange} value={props.inputValue} id='task'/>
+            <button type='button' onClick={props.currentUpdate} className="waves-effect waves-light btn">Add</button>
         </div>
     );
 }
