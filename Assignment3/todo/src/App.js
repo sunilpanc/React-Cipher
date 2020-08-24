@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Todo from './todo';
+import Add from './add';
+import Display from './Display'
+import 'materialize-css';
 
 class App extends Component {
     state={
@@ -8,24 +10,21 @@ class App extends Component {
       currentChange:''
     }
     handleChange=(event)=>{
-      let currentChange = event.target.value;
-      this.setState({currentChange});
+      this.setState({...this.state,currentChange:event.target.value});
     }
     handleUpdate =()=>{
       let currentUpdate ={};
       currentUpdate.id = this.state.task.length+1;
       currentUpdate.work = this.state.currentChange;
-      
       let task = [...this.state.task,currentUpdate];
-      this.setState({task});
-      console.log(this.state.task)
+      this.setState({currentChange:'',task});
     }
  
   render(){
     return (
       <div className="App">
-         <Todo currentChange = {(event)=>this.handleChange(event)} currentUpdate ={this.handleUpdate}/>
-          
+         <Add currentChange = {this.handleChange} currentUpdate ={this.handleUpdate} inputValue = {this.state.currentChange}/>
+         <Display allValues={this.state.task}/>
       </div>
     );
   }
