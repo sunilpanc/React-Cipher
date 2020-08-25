@@ -6,7 +6,7 @@ import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
 class App extends Component {
     state={
-      task:[ {id:1,work:"Some Work"}],
+      task:[ {id:0,work:"Some Work"}],
       currentChange:''
     }
     handleChange=(event)=>{
@@ -20,10 +20,10 @@ class App extends Component {
       this.setState({currentChange:'',task});
     }
  
-    deleteHandler=(index)=>{
-      let currentState = [...this.state.task].filter((element)=>{
-        return index !==element.id+1;
-      })
+    deleteHandler=(todoIndex)=>{
+      const currentState = [...this.state.task];
+      currentState.splice(todoIndex,1);
+      console.log(currentState);
       this.setState({task:currentState});
     }
   render(){
