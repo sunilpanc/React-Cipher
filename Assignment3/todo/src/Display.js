@@ -11,6 +11,7 @@ class Display extends Component{
                         <div className='card blue-grey darken-1' key={element.id}>
                             <div className="card-content white-text"><p className='card-title'>{element.work}</p></div>
                             <div className="card-action">
+                                <button type='text' onClick={()=>this.props.editHandler(index)} className="waves-effect waves-light btn mr">Edit</button>
                                 <button type='text' onClick={()=>this.props.deleteHandler(index)} className="waves-effect waves-light btn">Delete</button>
                             </div>
                         </div>
