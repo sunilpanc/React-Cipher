@@ -3,12 +3,10 @@
     padding:1.25rem;
     font-size:40px;
     color: #696969;
-    display: inline-block;
 }
 .email{
     text-decoration: none;
     color:#696969;
-    display: inline-block;
     
 }
 .email:hover{
@@ -16,7 +14,4 @@
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
     transition: box-shadow 0.3s ease-in-out;
     color:black;
-}
-.content{
-    display: inline-block;
 }

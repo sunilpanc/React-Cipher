@@ -6,8 +6,7 @@ const contact = () =>{
     }
     return(
         <div className={classes.mainContent}>
-            <div className={classes.content}>Get In Touch</div>
-            <div><a href={user.mail} className={classes.email}>Contact Me</a></div>
+            <div className={classes.content}>Get In Touch <a href={user.mail} className={classes.email}>Contact Me</a></div>
         </div>
     );
 } 

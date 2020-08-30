@@ -40,4 +40,20 @@
 
 .siteContent{
     font-weight: 400;
+    text-align:justify;
+}
+.myProjects{
+    cursor: pointer;
+    color: #696969;
+    background-color:rgba(250,250,250,0.7);
+    border: 1px solid #84ffff;
+    font-size:1.625rem;
+    border-radius: 1000px;
+    padding:24px 38px;
+}
+.myProjects:hover{
+    border: 1px solid #84ffff;
+    background-color:rgba(248,248,248,0.7);
+    box-shadow: 0px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease-in-out;
 }
