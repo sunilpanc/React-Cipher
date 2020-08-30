@@ -1,9 +1,8 @@
 .bottomBar{
     height: auto;
     width:100%;
-    background-color: black;
-    padding: 7.32vw;
-    margin: 1.25rem;
+    background-color:rgba(248,248,248,0.7);
+    padding: 2.5rem;
     width: 100%;
     max-width: 100%;
   }
@@ -12,16 +11,15 @@
     vertical-align:text-top;
   }
   .bottomBarText{
-    color:rgba(255,255,255,0.8);
-    font-family: 'Oswald', sans-serif;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Rubik', sans-serif;
     font-size:14px;
-    margin-top:20px;
     line-height: 2.4;
   }
   .bottomBarTextH3{
     font-size: 18px;
-    font-family: 'Oswald', sans-serif;
-    color:white;
+    font-family: 'Rubik', sans-serif;
+    color:rgba(0,0,0,0.7);
   }
   .bottomSideSpace{
     margin-right:70px;
@@ -29,10 +27,10 @@
   
   .bottomBarText .bottomEmail{
    text-decoration:none;
-   color:rgba(255, 255, 255, 0.8);
+   color:rgba(0,0,0,0.9);
   }
   .bottomBarText .bottomEmail:hover{
-    color:rgb(255, 255, 255);
+    color:rgba(0,0,0,0.7);
   }
   .distanceIcon{
     padding-right:4px;
@@ -43,10 +41,12 @@
   }
   .copyright{
     font-size:14px;
-    text-align: center;
     font-family: 'Oswald', sans-serif;
-    color:rgba(255, 255, 255, 0.8);
+    color:rgba(0,0,0,0.7);
     margin: 30px auto 5px auto;
-  
+    text-align: center;
+  }
+  .topManage{
+    margin-top:30px;
   }
   

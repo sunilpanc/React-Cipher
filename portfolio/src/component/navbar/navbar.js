@@ -7,7 +7,7 @@ const navbar = ()=>{
                     <Link className={`${classes.NavLink} ${classes.NavBrand}`} to="/">Sunil Panchal</Link>
                     <div className={classes.NavLinks}>
                         <Link className={classes.NavLink} to="/">Home</Link>
-                        <Link className={classes.NavLink} to="/about">About me</Link>
+                        <Link className={classes.NavLink} to="/resume">Resume</Link>
                         <Link className={classes.NavLink} to="/contact">Contact me</Link>
                     </div>
                 </div>
