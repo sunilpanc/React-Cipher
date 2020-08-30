@@ -1,0 +1,40 @@
+.mainContent{
+    margin:1.25rem;
+}
+
+.myImage{
+    float:right;
+    padding:20px;
+    background-color: white; 
+}
+
+
+.myImageControl{
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.08);
+    width:450px;
+    height:450px;
+}
+
+
+.container{
+    padding :1.25rem;
+    display: inline-block; 
+
+}
+.container:hover{
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.5s;
+    background-color:white;
+}
+.container:hover .siteBrand,.container:hover .siteContent{
+    transition: background-color 0.5s;
+    background-color:white;
+}
+.siteBrand{
+    font-size:56px;
+}
+
+.siteContent{
+    font-weight: 400;
+}

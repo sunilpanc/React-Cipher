@@ -1,0 +1,39 @@
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+.NavLink{
+    margin-right:50px;
+    text-decoration: none;
+    color: #696969;
+    font-size:22px;
+}
+
+.NavLink:hover{
+    color: #000000;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.NavBrand{
+    font-weight: 600;
+    margin-left:50px;
+    font-size: 28px;
+    color: #0A0A0A;
+    transition:font-size 0.7s;
+}
+.NavBrand:hover{
+    columns: #000000;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s ease-in-out;
+    transition:font-size 0.7s;
+    font-size:36px;
+}
+.NavHeader{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.NavLinks{
+   float: right; 
+}

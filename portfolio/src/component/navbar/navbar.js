@@ -1,26 +1,16 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
-import App from '../../container/App';
-import About from '../about/about';
-import Contact from '../contact/contact';
+import {Link} from 'react-router-dom';
+import classes from './navbar.module.css';
 const navbar = ()=>{
     return (
-        <BrowserRouter>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <Link to="/" className="navbar-brand">Sunil Panchal</Link>
-                <ul className="navbar-nav ml-auto">
-                    <li><Link className="nav-item nav-link active" to="/">Home</Link></li>
-                    <li><Link className="nav-item nav-link" to="/about">About me</Link></li>
-                    <li><Link className="nav-item nav-link" to="/contact">Contact me</Link></li>
-                </ul>
-
-                <Switch>
-                    <Route path='/' component={App}/>
-                    <Route path='/about' component={About}/>
-                    <Route path='/contact' component={Contact}/>
-                </Switch>
-            </nav>
-        </BrowserRouter>
+                <div className={classes.NavHeader}>
+                    <Link className={`${classes.NavLink} ${classes.NavBrand}`} to="/">Sunil Panchal</Link>
+                    <div className={classes.NavLinks}>
+                        <Link className={classes.NavLink} to="/">Home</Link>
+                        <Link className={classes.NavLink} to="/about">About me</Link>
+                        <Link className={classes.NavLink} to="/contact">Contact me</Link>
+                    </div>
+                </div>
     );
 }
 
